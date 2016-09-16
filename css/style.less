@@ -1,0 +1,269 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@dark-green: #308868;
+@green: #75c266;
+@black: #424242;
+@grey: #bebebe;
+@orange: #ff9900;
+@link: #4bb7d2;
+@light-grey: #eeeeee;
+
+@font: 'Roboto', sans-serif;
+
+@padding: 75px;
+
+
+.text {
+    display: block;
+    font-family: @font;
+    font-weight: 300;
+    font-size: 16px;
+    color: @black;
+}
+
+.text-white {
+    font-family: @font;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+.title {
+    display: block;
+    font-family: @font;
+    font-weight: 300;
+    font-size: 30px;
+    color: @black;
+    text-transform: uppercase;
+}
+
+
+.content-box {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+
+.btn {
+    width: auto;
+    height: 48px;
+    padding: 13px 40px;
+    background-color: @green;
+    border-radius: 48px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    .text-white
+}
+
+.btn:hover {
+    background-color: @dark-green;
+    color: white;
+}
+
+
+
+.lesson-cover-container {
+    display: block;
+    width: 100%;
+    height: 550px;
+    background-color: @light-grey;
+    
+    .header {
+        display: block;
+        width: 100%;
+        height: 90px;
+        background-color: @dark-green;
+        padding-left: @padding;
+        padding-right: @padding;
+        
+        .logo-box {
+            display: inline-block;
+            width: auto;
+            height: 75px;
+            padding-top: 14px;
+            
+            svg {
+                display: block;
+                width: auto;
+                height: 75px;
+            }
+        }
+        
+        nav {
+            display: inline-block;
+            float: right;
+            margin-top: 35px;
+            
+            li {
+                display: inline-block;
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 40px;
+                    transition: all 0.35s;
+                    .text-white
+                }
+            }
+            
+            a:hover {
+                color: @green;
+            }
+        }
+    }
+    
+    .lesson-title {
+        display: block;
+        padding: 200px 75px 0 75px;
+        text-align: center;
+        font-family: @font;
+        font-size: 48px;
+        font-weight: 400;
+        color: @black;
+        text-transform: uppercase;
+    }
+}
+
+#presentation {
+    
+    
+//    .presentation-title {
+//        .title
+//    }
+    
+    .presentation-link {
+        display: block;
+        width: 580px;
+        height: 320px;
+//        background: url(../img/presentation-preview.jpg) no-repeat center center;
+//        background-size: cover;
+        background-color: @light-grey;
+        margin: 50px auto 25px auto;
+    }
+    
+    .video-presentation-link {
+        color: @link;        
+        font-family: @font;
+        font-weight: 300;
+        font-size: 16px;
+    }
+}
+
+#home-work {
+    background-color: #eeeeee;
+    
+
+    fieldset, label { margin: 0; padding: 0; }
+    body{ margin: 20px; }
+    h1 { font-size: 1.5em; margin: 10px; }
+
+    /****** Style Star Rating Widget *****/
+
+    .rating { 
+        border: none;
+        float: none;
+        text-align: center;
+        width: 273px;
+        margin: auto;
+    }
+
+    .rating > input { display: none; } 
+    .rating > label:before { 
+      margin: 5px;
+      font-size: 48px;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "\f005";
+    }
+
+    .rating > .half:before { 
+      content: "\f089";
+      position: absolute;
+    }
+
+    .rating > label { 
+      color: #ddd; 
+     float: right; 
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+
+    .rating > input:checked ~ label, /* show gold star when clicked */
+    .rating:not(:checked) > label:hover, /* hover current star */
+    .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+    .rating > input:checked + label:hover, /* hover current star when changing rating */
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+    .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+}
+
+
+#test {
+
+    fieldset, label { margin: 0; padding: 0; }
+    body{ margin: 20px; }
+    h1 { font-size: 1.5em; margin: 10px; }
+
+    /****** Style Star Rating Widget *****/
+
+    .rating { 
+        border: none;
+        float: none;
+        text-align: center;
+        width: 273px;
+        margin: auto;
+    }
+
+    .rating > input { display: none; } 
+    .rating > label:before { 
+      margin: 5px;
+      font-size: 48px;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "\f005";
+    }
+
+    .rating > .half:before { 
+      content: "\f089";
+      position: absolute;
+    }
+
+    .rating > label { 
+      color: #ddd; 
+     float: right; 
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+
+    .rating > input:checked ~ label, /* show gold star when clicked */
+    .rating:not(:checked) > label:hover, /* hover current star */
+    .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+    .rating > input:checked + label:hover, /* hover current star when changing rating */
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+    .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+}
+
+
+#practic {
+    background-color: #eeeeee;
+}
+
+
+#bonus {
+
+}
+
+
+
+
+
+
+
+
