@@ -109,6 +109,8 @@
   height: 750px;
   background-color: #75c266;
   opacity: 0.8;
+  z-index: 0;
+  top: 0;
 }
 .lesson-cover-container .header {
   display: block;
@@ -117,6 +119,7 @@
   background-color: #308868;
   padding-left: 30px;
   padding-right: 30px;
+  z-index: 2;
 }
 .lesson-cover-container .header .row {
   display: block;
@@ -211,7 +214,7 @@
   /* hover previous stars in list */
 }
 #home-work .grade-dsc {
-  padding-top: 125px;
+  padding-top: 180px;
 }
 #home-work fieldset,
 #home-work label {
@@ -334,4 +337,94 @@
   background-size: auto 100%;
   margin: 50px auto 0px auto;
   transition: all 0.25s;
+}
+@media screen and (max-width: 1125px) {
+  .lesson-cover-container .header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: #308868;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 2;
+  }
+  .lesson-cover-container .header .row {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .lesson-cover-container .header .row .logo-box {
+    display: inline-block;
+    padding-top: 15px;
+  }
+  .lesson-cover-container .header .row .logo-box svg {
+    display: block;
+    width: auto;
+    height: 62px;
+  }
+  .lesson-cover-container .header .row nav {
+    display: inline-block;
+    float: right;
+    margin: 25px 0px;
+    text-align: right;
+  }
+  .lesson-cover-container .header .row nav li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .lesson-cover-container .header .row nav li a {
+    text-decoration: none;
+    padding: 10px 13px;
+    transition: all 0.35s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+  }
+  .lesson-cover-container .header .row nav a:hover {
+    color: #75c266;
+  }
+}
+@media screen and (max-width: 770px) {
+  #top-btn-box {
+    display: none;
+  }
+  .lesson-cover-container .header {
+    display: block;
+  }
+  .lesson-cover-container .header .row .logo-box {
+    display: inline-block;
+    padding-top: 15px;
+  }
+  .lesson-cover-container .header .row .logo-box svg {
+    margin: auto;
+  }
+  .lesson-cover-container .header .row nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  #presentation .presentation-link {
+    display: block;
+    width: 90%;
+    height: 320px;
+    background: url(../img/cover01.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  #presentation .presentation-link .play-box {
+    width: 90%;
+    height: 320px;
+  }
+  #presentation .presentation-link img {
+    width: 30%;
+    height: auto;
+    margin: 100px 30%;
+    opacity: 1;
+  }
+  #presentation .presentation-link:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
