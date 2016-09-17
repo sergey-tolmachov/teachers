@@ -1,5 +1,3 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-
 @dark-green: #308868;
 @green: #75c266;
 @black: #424242;
@@ -12,18 +10,32 @@
 
 @padding: 30px;
 
+#top-btn-box {
+    opacity: 0.5;
+    
+    .go-top-btn {
+        position: fixed;
+        display: none;
+        width: 60px;
+        height: 60px;
+        background-color: @green;
+        right: 0;
+        bottom: 0;
+        margin: 35px 35px;
+        border-radius: 50%;
 
-.go-top-btn {
-    position: fixed;
-    display: none;
-    width: 60px;
-    height: 60px;
-    background-color: @green;
-    right: 0;
-    bottom: 0;
-    margin: 35px 35px;
-    border-radius: 50%;
+        img {
+            display: block;
+            width: auto;
+            height: 60px;
+        }
+    }
 }
+
+#top-btn-box:hover {
+    opacity: 1;
+}
+
 
 .show {
     display: block;
@@ -116,6 +128,15 @@
     background: url(../img/cover.jpg) no-repeat center bottom;
     background-size: cover;
     
+    .over-color {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 750px;
+        background-color: @green;
+        opacity: 0.8;
+    }
+    
     .header {
         display: block;
         width: 100%;
@@ -192,6 +213,26 @@
 //        background-color: @light-grey;
         margin: 50px auto 0px auto;
         transition: all 0.25s;
+        
+        .play-box {
+            display: block;
+            position: absolute;
+            width: 580px;
+            height: 320px;
+            background-color: @green;
+            opacity: 0;
+            transition: all 0.35s;
+        }
+        
+        img {
+            display: block;
+            position: absolute;
+            width: 120px;
+            height: auto;
+            margin: 100px 230px;
+            opacity: 0;
+            transition: all 0.35s;
+        }
     }
     
     .presentation-link:hover {
@@ -199,6 +240,13 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.28);
     }
     
+    .presentation-link:hover .play-box {
+        opacity: 0.8;
+    }
+    
+    .presentation-link:hover img {
+        opacity: 1;
+    }
 }
 
 #home-work {
