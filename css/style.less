@@ -13,6 +13,22 @@
 @padding: 30px;
 
 
+.go-top-btn {
+    position: fixed;
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    right: 0;
+    bottom: 0;
+    margin: 35px 35px;
+    border-radius: 50%;
+}
+
+.show {
+    display: block;
+}
+
 .text {
     display: block;
     font-family: @font;
@@ -57,8 +73,32 @@
     background-color: @green;
     border-radius: 48px;
     margin-top: 125px;
-    margin-bottom: 125px;
+    margin-bottom: 0px;
     .text-white
+}
+
+.btn-outline {
+    display: inline-block;
+    width: auto;
+    height: 48px;
+    padding: 13px 40px;
+    background-color: transparent;
+    border: solid 1px @green;
+    border-radius: 48px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: @font;
+    font-weight: 100;
+    font-size: 16px;
+    color: @green;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background-color: @green;
+    color: white;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -72,7 +112,9 @@
     display: block;
     width: 100%;
     height: 750px;
-    background-color: @light-grey;
+//    background-color: @light-grey;
+    background: url(../img/cover.jpg) no-repeat center bottom;
+    background-size: cover;
     
     .header {
         display: block;
@@ -113,7 +155,7 @@
                     a {
                         text-decoration: none;
                         color: white;
-                        padding: 10px 18px;
+                        padding: 10px 13px;
                         transition: all 0.35s;
                         .text-white
                     }
@@ -128,44 +170,43 @@
     
     .lesson-title {    
         display: block;
-        padding: 250px 75px 0 75px;
+        padding: 0px 75px;
+        margin-top: 250px;
         text-align: center;
         font-family: @font;
         font-size: 48px;
-        font-weight: 400;
-        color: @black;
+        font-weight: 300;
+        color: white;
         text-transform: uppercase;
     }
 }
 
 #presentation {
     
-    
-//    .presentation-title {
-//        .title
-//    }
-    
     .presentation-link {
         display: block;
         width: 580px;
         height: 320px;
-//        background: url(../img/presentation-preview.jpg) no-repeat center center;
-//        background-size: cover;
-        background-color: @light-grey;
-        margin: 50px auto 25px auto;
+        background: url(../img/cover01.png) no-repeat center center;
+        background-size: 100% auto;
+//        background-color: @light-grey;
+        margin: 50px auto 0px auto;
+        transition: all 0.25s;
     }
     
-    .video-presentation-link {
-        color: @link;        
-        font-family: @font;
-        font-weight: 300;
-        font-size: 16px;
+    .presentation-link:hover {
+        transform: scale(1.01);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.28);
     }
+    
 }
 
 #home-work {
     background-color: #eeeeee;
-    
+
+    .grade-dsc {
+        padding-top: 125px;
+    }
 
     fieldset, label { margin: 0; padding: 0; }
     body{ margin: 20px; }
@@ -258,11 +299,32 @@
     .rating > input:checked ~ label:hover,
     .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
     .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+    
+    .img {
+        display: block;
+        width: 380px;
+        height: 120px;
+        background: url(../img/mini-test.png) no-repeat center center;
+        background-size: auto 100%;
+        margin: 50px auto 0px auto;
+        transition: all 0.25s;
+    }
 }
 
 
 #practic {
     background-color: #eeeeee;
+    
+        
+    .img {
+        display: block;
+        width: 380px;
+        height: 120px;
+        background: url(../img/practic.png) no-repeat center center;
+        background-size: auto 100%;
+        margin: 50px auto 0px auto;
+        transition: all 0.25s;
+    }
 }
 
 
