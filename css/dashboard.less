@@ -112,27 +112,28 @@ body {
 .lessons-gallery {
     display: block;
     margin-top: 125px;
+    z-index: 10;
     
     .l1 {
         display: inline-block;
         height: 320px;
         padding: 0px 25px;
         background-color: transparent;
-        text-decoration: none;
         
         .l1-content {
             display: block;
             width: 80%;
-            height: 80%;
+            height: 280px;
             margin: auto;
             background-color: @light-grey;
-            transition: all 0.35s;
+            transition: all 0.2s;
             border-radius: 5px;
+            text-decoration: none;
             
             .photo {
                 display: block;
                 width: 100%;
-                height: 80%;
+                height: 230px;
                 background: url(../img/cover01.png) no-repeat center center;
                 background-size: cover;
                 border-top-right-radius: @border-radius;
@@ -142,18 +143,104 @@ body {
             .string {
                 display: block;
                 width: 100%;
-                height: 20%;
+                height: 50px;
                 background-color: white;
                 padding-top: 14px;
                 border-bottom-right-radius: @border-radius;
                 border-bottom-left-radius: @border-radius;
             }
         }
+        
+        .l1-content:hover{
+            transform: scale(1.01);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+        }
     }
     
-    .l1:hover .l1-content {
-        transform: scale(1.01);
-        box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    .l2 {
+        display: inline-block;
+        height: 320px;
+        padding: 0px 25px;
+        background-color: transparent;
+        
+        .l2-content {
+            display: block;
+            width: 80%;
+            height: 280px;
+            margin: auto;
+            background-color: @light-grey;
+            transition: all 0.2s;
+            border-radius: 5px;
+            text-decoration: none;
+            
+            .photo {
+                display: block;
+                width: 100%;
+                height: 230px;
+                background: url(../img/cover01.png) no-repeat center center;
+                background-size: cover;
+                border-top-right-radius: @border-radius;
+                border-top-left-radius: @border-radius;
+            }
+            
+            .string {
+                display: block;
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                padding-top: 14px;
+                border-bottom-right-radius: @border-radius;
+                border-bottom-left-radius: @border-radius;
+            }
+        }
+        
+        .l2-content:hover{
+            transform: scale(1.01);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+        }
+    }
+    
+    .l3 {
+        display: inline-block;
+        height: 320px;
+        padding: 0px 25px;
+        background-color: transparent;
+        
+        .l3-content {
+            display: block;
+            width: 80%;
+            height: 280px;
+            margin: auto;
+            background-color: @light-grey;
+            transition: all 0.2s;
+            border-radius: 5px;
+            text-decoration: none;
+            
+            .photo {
+                display: block;
+                width: 100%;
+                height: 230px;
+                background: url(../img/cover01.png) no-repeat center center;
+                background-size: cover;
+                border-top-right-radius: @border-radius;
+                border-top-left-radius: @border-radius;
+            }
+            
+            .string {
+                display: block;
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                padding-top: 14px;
+                border-bottom-right-radius: @border-radius;
+                border-bottom-left-radius: @border-radius;
+            }
+        }
+        
+        .l3-content:hover{
+            transform: scale(1.01);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+        }
     }
 }
 
