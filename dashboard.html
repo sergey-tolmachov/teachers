@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 
-	<title>Beetroot Academy</title>
+	<title>Beetroot Academy - Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dashboard.css">
 	<link rel="stylesheet" href="css/animate.css">
 
 	<!--  -->
@@ -23,16 +23,14 @@
 <body>
     
     <!--Header-->
-    <div id="top-btn-box"><a href="#top" class="go-top-btn"><img src="img/top.svg" alt=""></a></div>
-
 	<div id="top" class="lesson-cover-container">
        <div class="over-color"></div>
         <div class="header">
             <div class="row">
-                <a href="dashboard.html" class="logo-box col-xs-12 col-sm-4 col-md-4">
+                <div class="logo-box">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" viewBox="0 0 863.5 377.8" style="enable-background:new 0 0 863.5 377.8;" xml:space="preserve" class="style-svg replaced-svg">
                     <style type="text/css">
-                        .st0{fill:#77C168;}
+                        .st0{fill:#FFFFFF;}
                         .st1{fill:#FFFFFF;}
                     </style>
                     <path class="st0" d="M204.6,44.9c-27.6,21-51.5,54.2-58.7,68.8c143.8-49.9,128.6,171.2-5,142.7c-4,43.6-10.6,59.4-26.9,90.7  c3.7-30,16.1-58.4-6.7-92.3c-13-19.4-63.5-12.3-80.6-31.9c-47.4-54.5,3.7-143.4,77.2-104C96.1,93,90.2,39.1,105.6,11.3  c11.4-0.8,15.5,5.7,23.5,8.4c3.5,3.7-2.7,7.2-1.7,13.4c4.6-6,7.5-13.7,11.7-20.1c9.6,2.7,16.4,8.3,21.8,15.1  c-4.2,10.3-9.7,19.4-13.4,30.2c12.7-6.3,25.4-27.2,43.6-33.6C200.4,26.7,200.6,37.8,204.6,44.9"></path>
@@ -56,7 +54,7 @@
                         <path class="st1" d="M527.8,130.9l-0.2-8.2c0,0,0.1-1.3,0.2-3.7c-0.3-0.9-1-9-2-24.2s-1.6-24.5-1.6-27.9c-0.2,0-0.3,0-0.5,0   c-6.8-0.1-10.2-1.2-10.2-3.2c0-0.7,0.5-1.2,1.4-1.6c0.9-0.4,1.8-0.7,2.6-0.7l17.1,1l2-0.1c2.6,0,3.9,0.9,3.9,2.6   c0,0.9-0.4,1.6-1.3,2.1c-0.9,0.5-1.8,0.8-2.9,0.8l-5.8-0.7l-0.2,1.1c0,6.8,0.7,16.9,2.1,30.4c1.4,13.5,2.1,23.7,2.1,30.5   c0,0.8-0.5,1.6-1.4,2.2c-0.9,0.6-1.9,1-3,1L527.8,130.9z"></path>
                     </g>
                     </svg>
-                </a>
+                </div>
                 <nav id="menu" class="col-xs-12 col-sm-8 col-md-8">
                     <li><a href="#presentation">Презентация</a></li>
                     <li><a href="#home-work">"ДЗ"</a></li>
@@ -65,83 +63,56 @@
                 </nav>
             </div>
         </div>
-        <span class="lesson-title">Основы Композиции</span>
+        <span class="page-title">Beetroot Academy Lessons</span>
+        <span class="page-dsc text-white">Beetroot Academy Lessons</span>
 	</div>
 	
-    <!--Presentation-->
-	<div id="presentation" class="content-box">
-	    <span class="title">Презентация</span>
-	    <span class="text">закрепляем просмотренный в видео материал</span>
-	    
-	    <a href="https://drive.google.com/open?id=1hFRr6PCAl_iu6hgATv1VBuKwpCVLWIu-IIP9xtpghoc" target="_blank" class="presentation-link">
-	        <div class="play-box"></div>
-	        <img src="img/play.svg" alt="">
-	    </a>
-	    
-	    <a href="https://drive.google.com/open?id=0BwZqDYbn4H4ANlV3ZTFFMF9ndlU" target="_blank" class="btn-outline">Текст для презентации</a>
-	</div>
-	
-    <!--Home Work-->
-	<div id="home-work" class="content-box">
-	    <span class="title">Проверка "ДЗ"</span>
-	    <span class="text">Проверить “ДЗ” у всех студентов и выставить общую оценку. Ответить на все вопросы</span>
-	    
-        <a href="https://drive.google.com/open?id=0BwZqDYbn4H4ANkZ2U0ZOclJLbjQ" target="_blank" class="btn">
-        а что задавали?
+	<div class="lessons-gallery">
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #1</div>
+            </div>
         </a>
-	    
-	    <span class="grade-dsc text">Общая оценка группы:</span>
-        <fieldset class="rating">
-            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-        </fieldset>
-	</div>
-	
-    <!--Test-->
-	<div id="test" class="content-box">
-	    <span class="title">Мини-тест</span>
-	    <span class="text">Проверить “ДЗ” у всех студентов и выставить общую оценку. Ответить на все вопросы</span>
-	    
-       <div class="img"></div>
-       
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6F8Ky_ZtnS3ct02iLtB_kH1zG1gStlFNmT7MqrZV4TMhYyw/viewform" target="_blank" class="home-work-btn btn">
-        открыть тест
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #2</div>
+            </div>
         </a>
-	    
-	</div>
-	
-    <!--Practic-->
-	<div id="practic" class="content-box">
-	    <span class="title">Практикум</span>
-	    <span class="text">Благодаря практикуму, вы сможете безошибочно создавать прототипы для разных типов сайта (лендинг, сайт-визитка, интернет-магазин)</span>
-	    
-       
-       <div class="img"></div>
-       
-        <a href="https://drive.google.com/open?id=0BwZqDYbn4H4AbGJuN2dUdmdNSVk" target="_blank" class="btn">
-        рекомендации для преподователя
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #3</div>
+            </div>
         </a>
-        
-	</div>
-	
-    <!--Bonus-->
-	<div id="bonus" class="content-box">
-	    <span class="title">Дополнительная информация</span>
-	    <span class="text">полезные ссылки, информация для самообучения и много друго</span>
-	    
-        <a href="https://drive.google.com/open?id=0BwZqDYbn4H4AVmtMckVhVzk5WGs" target="_blank" class="btn">
-        открыть и поделиться
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #4</div>
+            </div>
         </a>
-	    
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #5</div>
+            </div>
+        </a>
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #6</div>
+            </div>
+        </a>
+        <a href="index.html" class="l1 col-xs-6 col-sm-4 col-md-4">
+            <div class="l1-content">
+                <div class="photo"></div>
+                <div class="string text">Основы дизайна - #7</div>
+            </div>
+        </a>
 	</div>
+
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>

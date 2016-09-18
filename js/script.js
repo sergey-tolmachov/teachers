@@ -19,6 +19,8 @@ $(document).ready(function(){
 $(document).ready(function() {
   $(".lesson-title").addClass("animated fadeInDown");
   $(".header").addClass("animated fadeInDown");
+  $(".page-title").addClass("animated fadeInDown");
+  $(".page-dsc").addClass("animated fadeInDown");
 });
 
 $(window).scroll(function() {    
@@ -26,15 +28,21 @@ $(window).scroll(function() {
 
     if (scroll >= 100) {
         $(".lesson-title").addClass("animated fadeOutUp");
+        $(".page-title").addClass("animated fadeOutUp");
+        $(".page-dsc").addClass("animated fadeOutUp");
         $(".header").addClass("animated fadeOutUp");
         $(".go-top-btn").addClass("animated show fadeInDown");
     }
     
     else {
         $(".lesson-title").removeClass("animated fadeOutUp");
+        $(".page-title").removeClass("animated fadeOutUp");
+        $(".page-dsc").removeClass("animated fadeOutUp");
         $(".header").removeClass("animated fadeOutUp");
         $(".go-top-btn").removeClass("show");
         $(".lesson-title").addClass("animated fadeInDown");
+        $(".page-title").addClass("animated fadeInDown");
+        $(".page-dsc").addClass("animated fadeInDown");
         $(".header").addClass("animated fadeInDown");
     }
 });
