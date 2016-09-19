@@ -104,14 +104,14 @@
   background-color: #308868;
   color: white;
 }
-.lesson-cover-container {
+.cover-container {
   display: block;
   width: 100%;
   height: 750px;
   background: url(../img/cover.jpg) no-repeat center bottom;
   background-size: cover;
 }
-.lesson-cover-container .over-color {
+.cover-container .over-color {
   display: block;
   position: absolute;
   width: 100%;
@@ -121,7 +121,7 @@
   z-index: 0;
   top: 0;
 }
-.lesson-cover-container .header {
+.cover-container .header {
   display: block;
   position: relative;
   width: 100%;
@@ -131,32 +131,32 @@
   padding-right: 30px;
   z-index: 2;
 }
-.lesson-cover-container .header .row {
+.cover-container .header .row {
   display: block;
   width: 1050px;
   margin: auto;
 }
-.lesson-cover-container .header .row .logo-box {
+.cover-container .header .row .logo-box {
   display: inline-block;
   padding-top: 15px;
 }
-.lesson-cover-container .header .row .logo-box svg {
+.cover-container .header .row .logo-box svg {
   display: block;
   width: auto;
   height: 62px;
 }
-.lesson-cover-container .header .row nav {
+.cover-container .header .row nav {
   display: inline-block;
   float: right;
   margin: 25px 0px;
   text-align: right;
 }
-.lesson-cover-container .header .row nav li {
+.cover-container .header .row nav li {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
 }
-.lesson-cover-container .header .row nav li a {
+.cover-container .header .row nav li a {
   text-decoration: none;
   padding: 10px 13px;
   transition: all 0.35s;
@@ -166,10 +166,10 @@
   color: white;
   line-height: 20px;
 }
-.lesson-cover-container .header .row nav a:hover {
+.cover-container .header .row nav a:hover {
   color: #75c266;
 }
-.lesson-cover-container .lesson-title {
+.cover-container .lesson-title {
   display: block;
   position: relative;
   padding: 0px 75px;
@@ -472,4 +472,44 @@
     padding-left: 5%;
     padding-right: 5%;
   }
+}
+.l1 {
+  background: url(../img/cover/l1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.l2 {
+  background: url(../img/cover/l2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.l3 {
+  background: url(../img/cover/l3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.l4 {
+  background: url(../img/cover/l4.jpg) no-repeat center center;
+  background-size: cover;
+}
+.l5 {
+  background: url(../img/cover/l5.jpg) no-repeat center center;
+  background-size: cover;
+}
+#presentation .l1 {
+  background: url(../img/cover/l1.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+#presentation .l2 {
+  background: url(../img/cover/l2.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+#presentation .l3 {
+  background: url(../img/cover/l3.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+#presentation .l4 {
+  background: url(../img/cover/l4.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+#presentation .l5 {
+  background: url(../img/cover/l5.jpg) no-repeat center center;
+  background-size: 100% auto;
 }
