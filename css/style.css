@@ -133,7 +133,20 @@
   position: relative;
   width: 100%;
   height: 90px;
+  background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  /* ie10+ */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff', GradientType=0);
+  /* ie6-9 */
   padding-left: 75px;
   padding-right: 75px;
   z-index: 2;
@@ -144,7 +157,7 @@
 }
 .cover-container .header .logo-box svg {
   display: block;
-  width: auto;
+  width: 48px;
   height: 48px;
 }
 .cover-container .header nav {

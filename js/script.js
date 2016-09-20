@@ -1,9 +1,4 @@
-$('.header').hover(function() {
-  $(".header").toggleClass("header-big");
-});
-
-
-}$(document).ready(function(){
+$(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
