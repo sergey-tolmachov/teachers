@@ -1,4 +1,9 @@
-$(document).ready(function(){
+$('.header').hover(function() {
+  $(".header").toggleClass("header-big");
+});
+
+
+}$(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -14,14 +19,6 @@ $(document).ready(function(){
     });
 });
 
-
-
-$(document).ready(function() {
-  $(".lesson-title").addClass("animated fadeInDown");
-  $(".header").addClass("animated fadeInDown");
-  $(".page-title").addClass("animated fadeInDown");
-  $(".page-dsc").addClass("animated fadeInDown");
-});
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

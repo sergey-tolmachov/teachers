@@ -109,15 +109,20 @@
 .cover-container {
   display: block;
   width: 100%;
-  height: 750px;
-  background: url(../img/cover.jpg) no-repeat center bottom;
-  background-size: cover;
+  height: 650px;
+}
+.cover-container .bg-img {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 650px;
+  z-index: -10;
 }
 .cover-container .over-color {
   display: block;
   position: absolute;
   width: 100%;
-  height: 750px;
+  height: 650px;
   background-color: #75c266;
   opacity: 0.8;
   z-index: 0;
@@ -128,37 +133,32 @@
   position: relative;
   width: 100%;
   height: 90px;
-  background-color: #308868;
-  padding-left: 30px;
-  padding-right: 30px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  padding-left: 75px;
+  padding-right: 75px;
   z-index: 2;
 }
-.cover-container .header .row {
-  display: block;
-  width: 1050px;
-  margin: auto;
-}
-.cover-container .header .row .logo-box {
+.cover-container .header .logo-box {
   display: inline-block;
-  padding-top: 15px;
+  padding-top: 21px;
 }
-.cover-container .header .row .logo-box svg {
+.cover-container .header .logo-box svg {
   display: block;
   width: auto;
-  height: 62px;
+  height: 48px;
 }
-.cover-container .header .row nav {
+.cover-container .header nav {
   display: inline-block;
   float: right;
   margin: 25px 0px;
   text-align: right;
 }
-.cover-container .header .row nav li {
+.cover-container .header nav li {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
 }
-.cover-container .header .row nav li a {
+.cover-container .header nav li a {
   text-decoration: none;
   padding: 10px 13px;
   transition: all 0.35s;
@@ -168,14 +168,14 @@
   color: white;
   line-height: 20px;
 }
-.cover-container .header .row nav a:hover {
+.cover-container .header nav a:hover {
   color: #75c266;
 }
 .cover-container .lesson-title {
   display: block;
   position: relative;
   padding: 0px 75px;
-  margin-top: 250px;
+  margin-top: 200px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
@@ -184,12 +184,13 @@
   text-transform: uppercase;
   z-index: 5;
 }
+#presentation {
+  background-color: white;
+}
 #presentation .presentation-link {
   display: block;
   width: 580px;
   height: 320px;
-  background: url(../img/cover01.jpg) no-repeat center center;
-  background-size: 100% auto;
   margin: 50px auto 0px auto;
   transition: all 0.25s;
 }
@@ -279,6 +280,7 @@
   color: #FFED85;
 }
 #test {
+  background-color: white;
   /****** Style Star Rating Widget *****/
   /***** CSS Magic to Highlight Stars on Hover *****/
   /* hover previous stars in list */
@@ -352,14 +354,17 @@
   margin: 50px auto 0px auto;
   transition: all 0.25s;
 }
+#bonus {
+  background-color: white;
+}
 @media screen and (max-width: 1125px) {
   .lesson-cover-container .header {
     display: block;
     width: 100%;
     height: 90px;
     background-color: #308868;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
     z-index: 2;
   }
   .lesson-cover-container .header .row {
@@ -475,23 +480,23 @@
     padding-right: 5%;
   }
 }
-.l1 {
+.cover-container .l1 {
   background: url(../img/cover/l1.jpg) no-repeat center center;
   background-size: cover;
 }
-.l2 {
+.cover-container .l2 {
   background: url(../img/cover/l2.jpg) no-repeat center center;
   background-size: cover;
 }
-.l3 {
+.cover-container .l3 {
   background: url(../img/cover/l3.jpg) no-repeat center center;
   background-size: cover;
 }
-.l4 {
+.cover-container .l4 {
   background: url(../img/cover/l4.jpg) no-repeat center center;
   background-size: cover;
 }
-.l5 {
+.cover-container .l5 {
   background: url(../img/cover/l5.jpg) no-repeat center center;
   background-size: cover;
 }
