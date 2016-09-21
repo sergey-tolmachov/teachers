@@ -149,7 +149,11 @@
         position: absolute;
         width: 100%;
         height: 650px;
-        background-color: @green;
+        background: #308868; /* Old browsers */
+        background: -moz-linear-gradient(top,  #308868 0%, #75c266 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #308868 0%,#75c266 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #308868 0%,#75c266 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#308868', endColorstr='#75c266',GradientType=0 ); /* IE6-9 */
         opacity: 0.8;
         z-index: 0;
         top: 0;
@@ -160,13 +164,7 @@
         position: relative;
         width: 100%;
         height: 90px;
-        background: -moz-linear-gradient(270deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* ff3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0))); /* safari4+,chrome */
-        background: -webkit-linear-gradient(270deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* safari5.1+,chrome10+ */
-        background: -o-linear-gradient(270deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* opera 11.10+ */
-        background: -ms-linear-gradient(270deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* ie10+ */
-        background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%); /* w3c */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* ie6-9 */
+        background-color: transparent;
         padding-left: @padding;
         padding-right: @padding;
         z-index: 2;
@@ -208,15 +206,27 @@
         }
     }
     
-    .lesson-title {    
+    .page-title {    
         display: block;
         position: relative;
         padding: 0px 75px;
-        margin-top: 200px;
+        margin-top: 190px;
         text-align: center;
         font-family: @font;
         font-size: 48px;
         font-weight: 300;
+        color: white;
+        text-transform: uppercase;
+        z-index: 5;
+    }
+    
+    
+    .page-dsc {    
+        display: block;
+        position: relative;
+        padding: 0px 75px;
+        margin-top: 15px;
+        text-align: center;
         color: white;
         text-transform: uppercase;
         z-index: 5;

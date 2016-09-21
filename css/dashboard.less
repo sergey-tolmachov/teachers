@@ -28,7 +28,11 @@ body {
         position: absolute;
         width: 100%;
         height: 650px;
-        background-color: @green;
+        background: #308868; /* Old browsers */
+        background: -moz-linear-gradient(top,  #308868 0%, #75c266 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #308868 0%,#75c266 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #308868 0%,#75c266 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#308868', endColorstr='#75c266',GradientType=0 ); /* IE6-9 */
         opacity: 0.8;
         z-index: 0;
         top: 0;
@@ -63,7 +67,7 @@ body {
             }
 
             nav {
-                display: none;
+                display: block;
                 float: right;
                 margin: 25px 0px;
                 text-align: right;
@@ -123,19 +127,19 @@ body {
     text-align: center;
     background-color: @light-grey;
     z-index: 10;
-    
+        
     .course-part {
         display: block;
         width: 100%;
         padding-top: 125px;
         display: block;
     }
-    
+
     .course-part-dsc {
         display: block;
         margin-bottom: 75px;
     }
-    
+
     hr {
         display: block;
         border: 0;
@@ -143,13 +147,13 @@ body {
         height: 1px;
         background: @grey;
     }
-    
+
     .l1 {
         display: inline-block;
         height: 392px;
         padding: 0px 25px;
         background-color: transparent;
-        
+
         .l-content {
             display: block;
             position: relative;
@@ -160,7 +164,7 @@ body {
             transition: all 0.2s;
             border-radius: 5px;
             text-decoration: none;
-            
+
             .over-color {
                 display: block;
                 position: absolute;
@@ -173,7 +177,7 @@ body {
                 transition: all 0.25s;
                 text-align: center;
                 padding-top: 54px;
-                
+
                 .img {
                     display: block;
                     width: 120px;
@@ -183,7 +187,7 @@ body {
                     background-size: 100% auto;
                 }
             }
-            
+
             .photo {
                 display: block;
                 width: 100%;
@@ -191,7 +195,7 @@ body {
                 border-top-right-radius: @border-radius;
                 border-top-left-radius: @border-radius;
             }
-            
+
             .string {
                 display: block;
                 width: 100%;
@@ -200,7 +204,7 @@ body {
                 padding-top: 20px;
                 border-bottom-right-radius: @border-radius;
                 border-bottom-left-radius: @border-radius;
-                
+
                 .l-title {
                     display: block;
                     font-family: @font;
@@ -211,7 +215,7 @@ body {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     text-align: left;
-                    
+
                     .l-time {
                         display: inline-block;
                         font-size: 14px;
@@ -219,7 +223,7 @@ body {
                         margin: 0;
                     }
                 }
-                
+
                 .l-number {
                     display: inline-block;
                     font-family: @font;
@@ -233,7 +237,7 @@ body {
                     text-align: left;
                     float: left;
                 }
-                
+
                 .l-date {
                     display: inline-block;
                     font-family: @font;
@@ -247,20 +251,25 @@ body {
                 }
             }
         }
-        
+
         .l-content:hover{
             transform: scale(1.02);
             box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
         }
-        
+
         .l-content:hover .l-number {
             color: @green;
         }
-        
+
         .l-content:hover .over-color {
             opacity: 0.8;
         }
     }
+}
+
+
+.hide {
+    visibility: hidden;
 }
 
 .lessons-gallery {

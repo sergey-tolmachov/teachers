@@ -1,3 +1,15 @@
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 900) {
+        $(".bg-img").addClass("hide");
+    }
+    
+    else {
+        $(".bg-img").removeClass("hide");
+    }
+});
+
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
